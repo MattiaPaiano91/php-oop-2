@@ -1,4 +1,15 @@
 <?php
+require_once __DIR__ . '/product.php';
+require_once __DIR__ . '/toy.php';
+require_once __DIR__ . '/food.php';
+require_once __DIR__ . '/kennel.php';
+
+$printInpageArray = [];
+
+$luxuryKennel1 = new Kennel('deluxe kennel for rich dogs', '$6000', '50cm X 50cm', 'kevlar', true, 'dogs', '2kg');
+$goodForPoop = new food('goodForPoop','$50',null,'avena, cereal,meat',true,'cat','fish','22/09/1991');
+
+
 ?>
 
 
@@ -22,17 +33,14 @@
 </head>
 
 <body>
-    <header>
-        header
+    <header class="row justify-content-center align-items-center ">
+        <h1>Compra cose per gli animali dai</h1>
     </header>
 
     <main>
         main
     </main>
 
-    <footer>
-        footer
-    </footer>
 </body>
 
 </html>

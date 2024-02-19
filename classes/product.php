@@ -2,6 +2,7 @@
 
 class Product
 {
+    public $imgUrl;
     public $name;
     public $price;
     public $size;
@@ -9,7 +10,8 @@ class Product
     public $avaiable;
     public $category;
 
-        public function __construct($name, $price, $size, $material, $avaiable,$category){
+        public function __construct($imgUrl,$name, $price, $size, $material, $avaiable,$category){
+            $this->imgUrl = $imgUrl;
             $this->name = $name;
             $this->price = $price;
             $this->size = $size;
