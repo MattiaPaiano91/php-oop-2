@@ -1,12 +1,12 @@
 <?php
-
+require_once __DIR__ . '/../traits/HasMaterial.php';
 class Product
 {
+    use HasMaterial;
     public $imgUrl;
     public $name;
     public $price;
     public $size;
-    public $material;
     public $avaiable;
     public $category;
 
@@ -20,5 +20,4 @@ class Product
             $this->category = $category;
 
         }
-
-}
+    }
